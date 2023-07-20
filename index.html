@@ -1,40 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-   <!-- ===================== FAVICON ======================== --> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <!-- ===================== FAVICON ======================== -->
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <!-- ==================== REMIXICONS ===================== -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!-- ==================== CSS ============================= -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Travel & Tour Website</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- ============================= HEADER ========================= -->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo"> Travel </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">About</a>
+            </li>
+            <li class="nav_item">
+              <a href="#popular" class="nav_link">Popular</a>
+            </li>
+            <li class="nav_item">
+              <a href="#explore" class="nav_link">Explore</a>
+            </li>
+          </ul>
+          <!-- Close button -->
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <!-- Toggle Button -->
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
 
     <!-- ============================= MAIN =========================== -->
     <main class="main">
-  <!-- ============================= HOME ===========================  -->
-  <section class="home section" id="home"></section>
+      <!-- ============================= HOME ===========================  -->
+      <section class="home section" id="home">
+        <img src="./assets/img/home-bg.jpg" alt="home image" class="home_bg" />
+        <div class="home_shadow"></div>
+        <div class="home_container container grid">
+          <div class="home_data">
+            <h3 class="home_subtitle">Welcome To Travel</h3>
+            <h1 class="home_title">
+              Explore <br />
+              The World
+            </h1>
+            <p class="home_description">
+              Live the trips exploring the world, discover paradises, islands,
+              mountains and much more, get your trip now.
+            </p>
+            <a href="#" class="button">
+                Start Your Journey <i class="ri-arrow-right-line"></i>
+            </a>
+            <div class="home_cards grid">
+              <article class="home_card">
+                <img src="./assets/img/home-trees.jpg" alt="" class="home_card-img">
+                <h3 class="home_card-title">Croatia</h3>
+                <div class="home_card-shadow"></div>
+              </article>
+              <article class="home_card">
+                <img src="./assets/img/home-lake.jpg" alt="" class="home_card-img">
+                <h3 class="home_card-title">Iceland</h3>
+                <div class="home_card-shadow"></div>
+              </article>
+              <article class="home_card">
+                <img src="./assets/img/home-mountain.jpg" alt="" class="home_card-img">
+                <h3 class="home_card-title">Italy</h3>
+                <div class="home_card-shadow"></div>
+              </article>
+              <article class="home_card">
+                <img src="./assets/img/home-beach.jpg" alt="" class="home_card-img">
+                <h3 class="home_card-title">Spain</h3>
+                <div class="home_card-shadow"></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- ============================= ABOUT =========================== -->
-  <section class="about section" id="about"></section>
-  <!-- ============================= POPULAR ========================= -->
-  <section class="popular section" id="popular"></section>
-  <!-- ============================= EXPLORE ========================= -->
-  <section class="explore section" id="explore"></section>
+      <!-- ============================= ABOUT =========================== -->
+      <section class="about section" id="about"></section>
+      <!-- ============================= POPULAR ========================= -->
+      <section class="popular section" id="popular"></section>
+      <!-- ============================= EXPLORE ========================= -->
+      <section class="explore section" id="explore"></section>
 
-  <!-- ============================= JOIN ============================== -->
-  <section class="join section"></section>
-    
-  </main>
+      <!-- ============================= JOIN ============================== -->
+      <section class="join section"></section>
+    </main>
 
     <!-- ============================ FOOTER ============================= -->
     <footer class="footer"></footer>
@@ -46,9 +120,5 @@
     <!-- ================================= MAIN JS ========================= -->
 
     <script src="assets/js/main.js"></script>
-
-    
-    
-    
-</body>
+  </body>
 </html>
